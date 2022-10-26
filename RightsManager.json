@@ -1,0 +1,345 @@
+{
+  "address": "0x8E8781935e48f620DB8c3688a17c485C80Aa4ceB",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "DEFAULT_CAN_ADD_REMOVE_TOKENS",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "DEFAULT_CAN_CHANGE_CAP",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "DEFAULT_CAN_CHANGE_FLOOR",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "DEFAULT_CAN_CHANGE_SWAP_FEE",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "DEFAULT_CAN_CHANGE_WEIGHTS",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "DEFAULT_CAN_PAUSE_SWAPPING",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "DEFAULT_CAN_WHITELIST_LPS",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bool[]",
+          "name": "a",
+          "type": "bool[]"
+        }
+      ],
+      "name": "constructRights",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "bool",
+              "name": "canPauseSwapping",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "canChangeSwapFee",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "canChangeWeights",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "canAddRemoveTokens",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "canWhitelistLPs",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "canChangeCap",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "canChangeFloor",
+              "type": "bool"
+            }
+          ],
+          "internalType": "struct RightsManager.Rights",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "bool",
+              "name": "canPauseSwapping",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "canChangeSwapFee",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "canChangeWeights",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "canAddRemoveTokens",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "canWhitelistLPs",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "canChangeCap",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "canChangeFloor",
+              "type": "bool"
+            }
+          ],
+          "internalType": "struct RightsManager.Rights",
+          "name": "rights",
+          "type": "tuple"
+        }
+      ],
+      "name": "convertRights",
+      "outputs": [
+        {
+          "internalType": "bool[]",
+          "name": "",
+          "type": "bool[]"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "bool",
+              "name": "canPauseSwapping",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "canChangeSwapFee",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "canChangeWeights",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "canAddRemoveTokens",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "canWhitelistLPs",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "canChangeCap",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "canChangeFloor",
+              "type": "bool"
+            }
+          ],
+          "internalType": "struct RightsManager.Rights",
+          "name": "self",
+          "type": "tuple"
+        },
+        {
+          "internalType": "enum RightsManager.Permissions",
+          "name": "permission",
+          "type": "RightsManager.Permissions"
+        }
+      ],
+      "name": "hasPermission",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x2004c0767914e948c971c3d30489a5851fd37305892d22de7d503c7932ae44f6",
+  "receipt": {
+    "to": null,
+    "from": "0x595b85b4A418e3B8df897D02F5BD49167D00862F",
+    "contractAddress": "0x8E8781935e48f620DB8c3688a17c485C80Aa4ceB",
+    "transactionIndex": 42,
+    "gasUsed": "455480",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0xb70166d8b0650bcbdb9108c52bf82fc8e7e31179fdbbdae8c9e44d7eb468ae43",
+    "transactionHash": "0x2004c0767914e948c971c3d30489a5851fd37305892d22de7d503c7932ae44f6",
+    "logs": [],
+    "blockNumber": 7836365,
+    "cumulativeGasUsed": "9332836",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "ec6aa3e489db51b52585f0a55af97c3a",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"DEFAULT_CAN_ADD_REMOVE_TOKENS\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"DEFAULT_CAN_CHANGE_CAP\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"DEFAULT_CAN_CHANGE_FLOOR\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"DEFAULT_CAN_CHANGE_SWAP_FEE\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"DEFAULT_CAN_CHANGE_WEIGHTS\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"DEFAULT_CAN_PAUSE_SWAPPING\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"DEFAULT_CAN_WHITELIST_LPS\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bool[]\",\"name\":\"a\",\"type\":\"bool[]\"}],\"name\":\"constructRights\",\"outputs\":[{\"components\":[{\"internalType\":\"bool\",\"name\":\"canPauseSwapping\",\"type\":\"bool\"},{\"internalType\":\"bool\",\"name\":\"canChangeSwapFee\",\"type\":\"bool\"},{\"internalType\":\"bool\",\"name\":\"canChangeWeights\",\"type\":\"bool\"},{\"internalType\":\"bool\",\"name\":\"canAddRemoveTokens\",\"type\":\"bool\"},{\"internalType\":\"bool\",\"name\":\"canWhitelistLPs\",\"type\":\"bool\"},{\"internalType\":\"bool\",\"name\":\"canChangeCap\",\"type\":\"bool\"},{\"internalType\":\"bool\",\"name\":\"canChangeFloor\",\"type\":\"bool\"}],\"internalType\":\"struct RightsManager.Rights\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"bool\",\"name\":\"canPauseSwapping\",\"type\":\"bool\"},{\"internalType\":\"bool\",\"name\":\"canChangeSwapFee\",\"type\":\"bool\"},{\"internalType\":\"bool\",\"name\":\"canChangeWeights\",\"type\":\"bool\"},{\"internalType\":\"bool\",\"name\":\"canAddRemoveTokens\",\"type\":\"bool\"},{\"internalType\":\"bool\",\"name\":\"canWhitelistLPs\",\"type\":\"bool\"},{\"internalType\":\"bool\",\"name\":\"canChangeCap\",\"type\":\"bool\"},{\"internalType\":\"bool\",\"name\":\"canChangeFloor\",\"type\":\"bool\"}],\"internalType\":\"struct RightsManager.Rights\",\"name\":\"rights\",\"type\":\"tuple\"}],\"name\":\"convertRights\",\"outputs\":[{\"internalType\":\"bool[]\",\"name\":\"\",\"type\":\"bool[]\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"bool\",\"name\":\"canPauseSwapping\",\"type\":\"bool\"},{\"internalType\":\"bool\",\"name\":\"canChangeSwapFee\",\"type\":\"bool\"},{\"internalType\":\"bool\",\"name\":\"canChangeWeights\",\"type\":\"bool\"},{\"internalType\":\"bool\",\"name\":\"canAddRemoveTokens\",\"type\":\"bool\"},{\"internalType\":\"bool\",\"name\":\"canWhitelistLPs\",\"type\":\"bool\"},{\"internalType\":\"bool\",\"name\":\"canChangeCap\",\"type\":\"bool\"},{\"internalType\":\"bool\",\"name\":\"canChangeFloor\",\"type\":\"bool\"}],\"internalType\":\"struct RightsManager.Rights\",\"name\":\"self\",\"type\":\"tuple\"},{\"internalType\":\"enum RightsManager.Permissions\",\"name\":\"permission\",\"type\":\"RightsManager.Permissions\"}],\"name\":\"hasPermission\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Desyn Labs\",\"kind\":\"dev\",\"methods\":{\"constructRights(bool[])\":{\"details\":\"If you pass an empty array, it will construct it using the defaults\",\"params\":{\"a\":\"- array input\"},\"returns\":{\"_0\":\"Rights struct\"}},\"convertRights(RightsManager.Rights)\":{\"details\":\"avoids multiple calls to hasPermission\",\"params\":{\"rights\":\"- the rights struct to convert\"},\"returns\":{\"_0\":\"boolean array containing the rights settings\"}},\"hasPermission(RightsManager.Rights,RightsManager.Permissions)\":{\"params\":{\"permission\":\"- The permission to check\",\"self\":\"- Rights struct containing the permissions\"},\"returns\":{\"_0\":\"Boolean true if it has the permission\"}}},\"title\":\"Manage Configurable Rights for the smart pool      canPauseSwapping - can setPublicSwap back to false after turning it on                         by default, it is off on initialization and can only be turned on      canChangeSwapFee - can setSwapFee after initialization (by default, it is fixed at create time)      canChangeWeights - can bind new token weights (allowed by default in base pool)      canAddRemoveTokens - can bind/unbind tokens (allowed by default in base pool)      canWhitelistLPs - can limit liquidity providers to a given set of addresses      canChangeCap - can change the BSP cap (max # of pool tokens)      canChangeFloor - can change the BSP floor for Closure ETF (min # of pool tokens)\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"constructRights(bool[])\":{\"notice\":\"create a struct from an array (or return defaults)\"},\"convertRights(RightsManager.Rights)\":{\"notice\":\"Convert rights struct to an array (e.g., for events, GUI)\"},\"hasPermission(RightsManager.Rights,RightsManager.Permissions)\":{\"notice\":\"Externally check permissions using the Enum\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/libraries/RightsManager.sol\":\"RightsManager\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":20},\"remappings\":[]},\"sources\":{\"contracts/libraries/RightsManager.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-3.0-or-later\\npragma solidity 0.6.12;\\n\\n// Needed to handle structures externally\\npragma experimental ABIEncoderV2;\\n\\n/**\\n * @author Desyn Labs\\n * @title Manage Configurable Rights for the smart pool\\n *      canPauseSwapping - can setPublicSwap back to false after turning it on\\n *                         by default, it is off on initialization and can only be turned on\\n *      canChangeSwapFee - can setSwapFee after initialization (by default, it is fixed at create time)\\n *      canChangeWeights - can bind new token weights (allowed by default in base pool)\\n *      canAddRemoveTokens - can bind/unbind tokens (allowed by default in base pool)\\n *      canWhitelistLPs - can limit liquidity providers to a given set of addresses\\n *      canChangeCap - can change the BSP cap (max # of pool tokens)\\n *      canChangeFloor - can change the BSP floor for Closure ETF (min # of pool tokens)\\n */\\nlibrary RightsManager {\\n    // Type declarations\\n\\n    enum Permissions {\\n        PAUSE_SWAPPING,\\n        CHANGE_SWAP_FEE,\\n        CHANGE_WEIGHTS,\\n        ADD_REMOVE_TOKENS,\\n        WHITELIST_LPS,\\n        CHANGE_CAP,\\n        CHANGE_FLOOR\\n    }\\n\\n    struct Rights {\\n        bool canPauseSwapping;\\n        bool canChangeSwapFee;\\n        bool canChangeWeights;\\n        bool canAddRemoveTokens;\\n        bool canWhitelistLPs;\\n        bool canChangeCap;\\n        bool canChangeFloor;\\n    }\\n\\n    // State variables (can only be constants in a library)\\n    bool public constant DEFAULT_CAN_PAUSE_SWAPPING = false;\\n    bool public constant DEFAULT_CAN_CHANGE_SWAP_FEE = true;\\n    bool public constant DEFAULT_CAN_CHANGE_WEIGHTS = true;\\n    bool public constant DEFAULT_CAN_ADD_REMOVE_TOKENS = false;\\n    bool public constant DEFAULT_CAN_WHITELIST_LPS = false;\\n    bool public constant DEFAULT_CAN_CHANGE_CAP = false;\\n    bool public constant DEFAULT_CAN_CHANGE_FLOOR = false;\\n\\n    // Functions\\n\\n    /**\\n     * @notice create a struct from an array (or return defaults)\\n     * @dev If you pass an empty array, it will construct it using the defaults\\n     * @param a - array input\\n     * @return Rights struct\\n     */\\n    function constructRights(bool[] calldata a) external pure returns (Rights memory) {\\n        if (a.length < 7) {\\n            return\\n                Rights(\\n                    DEFAULT_CAN_PAUSE_SWAPPING,\\n                    DEFAULT_CAN_CHANGE_SWAP_FEE,\\n                    DEFAULT_CAN_CHANGE_WEIGHTS,\\n                    DEFAULT_CAN_ADD_REMOVE_TOKENS,\\n                    DEFAULT_CAN_WHITELIST_LPS,\\n                    DEFAULT_CAN_CHANGE_CAP,\\n                    DEFAULT_CAN_CHANGE_FLOOR\\n                );\\n        } else {\\n            return Rights(a[0], a[1], a[2], a[3], a[4], a[5], a[6]);\\n        }\\n    }\\n\\n    /**\\n     * @notice Convert rights struct to an array (e.g., for events, GUI)\\n     * @dev avoids multiple calls to hasPermission\\n     * @param rights - the rights struct to convert\\n     * @return boolean array containing the rights settings\\n     */\\n    function convertRights(Rights calldata rights) external pure returns (bool[] memory) {\\n        bool[] memory result = new bool[](7);\\n\\n        result[0] = rights.canPauseSwapping;\\n        result[1] = rights.canChangeSwapFee;\\n        result[2] = rights.canChangeWeights;\\n        result[3] = rights.canAddRemoveTokens;\\n        result[4] = rights.canWhitelistLPs;\\n        result[5] = rights.canChangeCap;\\n        result[6] = rights.canChangeFloor;\\n\\n        return result;\\n    }\\n\\n    // Though it is actually simple, the number of branches triggers code-complexity\\n    /* solhint-disable code-complexity */\\n\\n    /**\\n     * @notice Externally check permissions using the Enum\\n     * @param self - Rights struct containing the permissions\\n     * @param permission - The permission to check\\n     * @return Boolean true if it has the permission\\n     */\\n    function hasPermission(Rights calldata self, Permissions permission) external pure returns (bool) {\\n        if (Permissions.PAUSE_SWAPPING == permission) {\\n            return self.canPauseSwapping;\\n        } else if (Permissions.CHANGE_SWAP_FEE == permission) {\\n            return self.canChangeSwapFee;\\n        } else if (Permissions.CHANGE_WEIGHTS == permission) {\\n            return self.canChangeWeights;\\n        } else if (Permissions.ADD_REMOVE_TOKENS == permission) {\\n            return self.canAddRemoveTokens;\\n        } else if (Permissions.WHITELIST_LPS == permission) {\\n            return self.canWhitelistLPs;\\n        } else if (Permissions.CHANGE_CAP == permission) {\\n            return self.canChangeCap;\\n        } else if (Permissions.CHANGE_FLOOR == permission) {\\n            return self.canChangeFloor;\\n        }\\n    }\\n\\n    /* solhint-enable code-complexity */\\n}\\n\",\"keccak256\":\"0xbb84f5d5033565eca897116c4a385bf6309f1780b58528725150a366bbff5a1d\",\"license\":\"GPL-3.0-or-later\"}},\"version\":1}",
+  "bytecode": "0x610746610026600b82828239805160001a60731461001957fe5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600436106100985760003560e01c806308395a341461009d57806321bb04ae146100bb5780632cc0c3461461009d5780633d027b9d1461009d5780634583544a146100c3578063710a51c2146100d6578063c08473fc146100f6578063cb0d28f6146100bb578063dccf54e71461009d578063edfc78481461009d575b600080fd5b6100a5610116565b6040516100b29190610694565b60405180910390f35b6100a561011b565b6100a56100d136600461060d565b610120565b6100e96100e43660046105f2565b610224565b6040516100b2919061064e565b61010961010436600461055c565b610388565b6040516100b2919061069f565b600081565b600181565b600081600681111561012e57fe5b6101465761013f60208401846105cb565b905061021e565b81600681111561015257fe5b6001141561016a5761013f60408401602085016105cb565b81600681111561017657fe5b6002141561018e5761013f60608401604085016105cb565b81600681111561019a57fe5b600314156101b25761013f60808401606085016105cb565b8160068111156101be57fe5b600414156101d65761013f60a08401608085016105cb565b8160068111156101e257fe5b600514156101fa5761013f60c0840160a085016105cb565b81600681111561020657fe5b6006141561021e5761013f60e0840160c085016105cb565b92915050565b60408051600780825261010082019092526060918291906020820160e08036833701905050905061025860208401846105cb565b8160008151811061026557fe5b91151560209283029190910182015261028490604085019085016105cb565b8160018151811061029157fe5b911515602092830291909101909101526102b160608401604085016105cb565b816002815181106102be57fe5b911515602092830291909101909101526102de60808401606085016105cb565b816003815181106102eb57fe5b9115156020928302919091019091015261030b60a08401608085016105cb565b8160048151811061031857fe5b9115156020928302919091019091015261033860c0840160a085016105cb565b8160058151811061034557fe5b9115156020928302919091019091015261036560e0840160c085016105cb565b8160068151811061037257fe5b9115156020928302919091019091015292915050565b610390610509565b60078210156103db57506040805160e081018252600080825260016020830181905292820192909252606081018290526080810182905260a0810182905260c081019190915261021e565b6040518060e00160405280848460008181106103f357fe5b905060200201602081019061040891906105cb565b151581526020018484600181811061041c57fe5b905060200201602081019061043191906105cb565b151581526020018484600281811061044557fe5b905060200201602081019061045a91906105cb565b151581526020018484600381811061046e57fe5b905060200201602081019061048391906105cb565b151581526020018484600481811061049757fe5b90506020020160208101906104ac91906105cb565b15158152602001848460058181106104c057fe5b90506020020160208101906104d591906105cb565b15158152602001848460068181106104e957fe5b90506020020160208101906104fe91906105cb565b15159052905061021e565b6040805160e081018252600080825260208201819052918101829052606081018290526080810182905260a0810182905260c081019190915290565b600060e08284031215610556578081fd5b50919050565b6000806020838503121561056e578182fd5b823567ffffffffffffffff80821115610585578384fd5b818501915085601f830112610598578384fd5b8135818111156105a6578485fd5b86602080830285010111156105b9578485fd5b60209290920196919550909350505050565b6000602082840312156105dc578081fd5b813580151581146105eb578182fd5b9392505050565b600060e08284031215610603578081fd5b6105eb8383610545565b6000806101008385031215610620578182fd5b61062a8484610545565b915060e08301356007811061063d578182fd5b809150509250929050565b15159052565b6020808252825182820181905260009190848201906040850190845b8181101561068857835115158352928401929184019160010161066a565b50909695505050505050565b901515815260200190565b600060e08201905082511515825260208301511515602083015260408301511515604083015260608301511515606083015260808301516106e36080840182610648565b5060a08301516106f660a0840182610648565b5060c083015161070960c0840182610648565b509291505056fea264697066735822122095ec8afbbd2a0624d1d8ebc89bbecd4298d7929976ff4160d77d2bae31146d8e64736f6c634300060c0033",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600436106100985760003560e01c806308395a341461009d57806321bb04ae146100bb5780632cc0c3461461009d5780633d027b9d1461009d5780634583544a146100c3578063710a51c2146100d6578063c08473fc146100f6578063cb0d28f6146100bb578063dccf54e71461009d578063edfc78481461009d575b600080fd5b6100a5610116565b6040516100b29190610694565b60405180910390f35b6100a561011b565b6100a56100d136600461060d565b610120565b6100e96100e43660046105f2565b610224565b6040516100b2919061064e565b61010961010436600461055c565b610388565b6040516100b2919061069f565b600081565b600181565b600081600681111561012e57fe5b6101465761013f60208401846105cb565b905061021e565b81600681111561015257fe5b6001141561016a5761013f60408401602085016105cb565b81600681111561017657fe5b6002141561018e5761013f60608401604085016105cb565b81600681111561019a57fe5b600314156101b25761013f60808401606085016105cb565b8160068111156101be57fe5b600414156101d65761013f60a08401608085016105cb565b8160068111156101e257fe5b600514156101fa5761013f60c0840160a085016105cb565b81600681111561020657fe5b6006141561021e5761013f60e0840160c085016105cb565b92915050565b60408051600780825261010082019092526060918291906020820160e08036833701905050905061025860208401846105cb565b8160008151811061026557fe5b91151560209283029190910182015261028490604085019085016105cb565b8160018151811061029157fe5b911515602092830291909101909101526102b160608401604085016105cb565b816002815181106102be57fe5b911515602092830291909101909101526102de60808401606085016105cb565b816003815181106102eb57fe5b9115156020928302919091019091015261030b60a08401608085016105cb565b8160048151811061031857fe5b9115156020928302919091019091015261033860c0840160a085016105cb565b8160058151811061034557fe5b9115156020928302919091019091015261036560e0840160c085016105cb565b8160068151811061037257fe5b9115156020928302919091019091015292915050565b610390610509565b60078210156103db57506040805160e081018252600080825260016020830181905292820192909252606081018290526080810182905260a0810182905260c081019190915261021e565b6040518060e00160405280848460008181106103f357fe5b905060200201602081019061040891906105cb565b151581526020018484600181811061041c57fe5b905060200201602081019061043191906105cb565b151581526020018484600281811061044557fe5b905060200201602081019061045a91906105cb565b151581526020018484600381811061046e57fe5b905060200201602081019061048391906105cb565b151581526020018484600481811061049757fe5b90506020020160208101906104ac91906105cb565b15158152602001848460058181106104c057fe5b90506020020160208101906104d591906105cb565b15158152602001848460068181106104e957fe5b90506020020160208101906104fe91906105cb565b15159052905061021e565b6040805160e081018252600080825260208201819052918101829052606081018290526080810182905260a0810182905260c081019190915290565b600060e08284031215610556578081fd5b50919050565b6000806020838503121561056e578182fd5b823567ffffffffffffffff80821115610585578384fd5b818501915085601f830112610598578384fd5b8135818111156105a6578485fd5b86602080830285010111156105b9578485fd5b60209290920196919550909350505050565b6000602082840312156105dc578081fd5b813580151581146105eb578182fd5b9392505050565b600060e08284031215610603578081fd5b6105eb8383610545565b6000806101008385031215610620578182fd5b61062a8484610545565b915060e08301356007811061063d578182fd5b809150509250929050565b15159052565b6020808252825182820181905260009190848201906040850190845b8181101561068857835115158352928401929184019160010161066a565b50909695505050505050565b901515815260200190565b600060e08201905082511515825260208301511515602083015260408301511515604083015260608301511515606083015260808301516106e36080840182610648565b5060a08301516106f660a0840182610648565b5060c083015161070960c0840182610648565b509291505056fea264697066735822122095ec8afbbd2a0624d1d8ebc89bbecd4298d7929976ff4160d77d2bae31146d8e64736f6c634300060c0033",
+  "devdoc": {
+    "author": "Desyn Labs",
+    "kind": "dev",
+    "methods": {
+      "constructRights(bool[])": {
+        "details": "If you pass an empty array, it will construct it using the defaults",
+        "params": {
+          "a": "- array input"
+        },
+        "returns": {
+          "_0": "Rights struct"
+        }
+      },
+      "convertRights(RightsManager.Rights)": {
+        "details": "avoids multiple calls to hasPermission",
+        "params": {
+          "rights": "- the rights struct to convert"
+        },
+        "returns": {
+          "_0": "boolean array containing the rights settings"
+        }
+      },
+      "hasPermission(RightsManager.Rights,RightsManager.Permissions)": {
+        "params": {
+          "permission": "- The permission to check",
+          "self": "- Rights struct containing the permissions"
+        },
+        "returns": {
+          "_0": "Boolean true if it has the permission"
+        }
+      }
+    },
+    "title": "Manage Configurable Rights for the smart pool      canPauseSwapping - can setPublicSwap back to false after turning it on                         by default, it is off on initialization and can only be turned on      canChangeSwapFee - can setSwapFee after initialization (by default, it is fixed at create time)      canChangeWeights - can bind new token weights (allowed by default in base pool)      canAddRemoveTokens - can bind/unbind tokens (allowed by default in base pool)      canWhitelistLPs - can limit liquidity providers to a given set of addresses      canChangeCap - can change the BSP cap (max # of pool tokens)      canChangeFloor - can change the BSP floor for Closure ETF (min # of pool tokens)",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "constructRights(bool[])": {
+        "notice": "create a struct from an array (or return defaults)"
+      },
+      "convertRights(RightsManager.Rights)": {
+        "notice": "Convert rights struct to an array (e.g., for events, GUI)"
+      },
+      "hasPermission(RightsManager.Rights,RightsManager.Permissions)": {
+        "notice": "Externally check permissions using the Enum"
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": null
+  }
+}
